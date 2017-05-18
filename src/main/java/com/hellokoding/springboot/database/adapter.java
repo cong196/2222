@@ -63,7 +63,7 @@ public boolean CapNhat(String noidung)
 		
 		con=DriverManager.getConnection(s.getSQL(),s.getName(),s.getPass());
 		stm=con.createStatement();
-		String sql="UPDATE `noidung` SET `noidung`= '"+noidung+"'";
+		String sql="UPDATE `demo` SET `noidung`= '"+noidung+"'";
 		PreparedStatement pst = (PreparedStatement) con.prepareStatement(sql);
 		return pst.executeUpdate() > 0;						
 				
